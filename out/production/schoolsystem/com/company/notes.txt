@@ -1,0 +1,23 @@
+Keep track of students tuition paid
+Keep track of teachers salary paid
+Keep track of school income
+
+// School
+Teachers
+Students
+Total money earned (students tuition)
+Total money spent (teachers salary)
+
+// Teacher
+Id
+Name
+Salary
+getPaid
+
+// Student
+Id
+Name
+Year
+Tuition
+totalTuitionPaid
+payTuition
