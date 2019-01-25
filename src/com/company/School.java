@@ -21,6 +21,16 @@ public class School {
         return teachers;
     }
 
+    /**
+     *
+     * @param id
+     * @return
+     */
+    
+    public Teacher getTeacherById(int id) {
+        // iterate over (filter?) List<Teachers> and return where id=teacher.id
+    }
+
     public void addTeacher(Teacher teacher) {
         teachers.add(teacher);
     }
