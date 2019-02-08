@@ -21,14 +21,15 @@ public class School {
         return teachers;
     }
 
-    /**
-     *
-     * @param id
-     * @return
-     */
-    
-    public Teacher getTeacherById(int id) {
-        // iterate over (filter?) List<Teachers> and return where id=teacher.id
+    // what do you do if you return different things based on different statements
+    public String getTeacherById(int id) {
+        for(Teacher teacher : teachers)
+            if(Integer.valueOf(teacher.getId()).equals(id)) {
+                return teacher.getName();
+            } else {
+                return "Invalid Id Entered";
+            }
+        return "Error";
     }
 
     public void addTeacher(Teacher teacher) {

@@ -6,6 +6,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+
         Teacher john = new Teacher(1, "john", 2000);
         Teacher grant = new Teacher(2, "grant", 3000);
         List<Teacher> teacherArray = new ArrayList<>();
@@ -26,6 +27,12 @@ public class Main {
 
         System.out.println(schoolOne.getMoneyEarned());
         john.getPaid(2000);
+
+        Teacher gary = new Teacher(3, "gary", 1500);
+        schoolOne.addTeacher(gary);
         System.out.println(schoolOne.getMoney());
+        System.out.println(gary.getName());
+        System.out.println(schoolOne.getTeacherById(3));
     }
+
 }
